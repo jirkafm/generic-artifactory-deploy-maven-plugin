@@ -101,17 +101,19 @@ Supported authentication mechanisms:
 		<username>admin</username>
 		<password>password</password>
     </configuration>
+
 * API Key
 
     <configuration>
 		<apiKey>your_api_key</apiKey>
     </configuration>
+
 * Access token
 
     <configuration>
 		<accessToken>your_access_token</accessToken>
     </configuration>
-    
+
 ### Checksum-Based Storage
 
 Validation of integrity of uploaded files is done through checksum headers. User can choose what kind of checksum headers will be 
@@ -133,16 +135,6 @@ There is a *fileChecksums* option in configuration to define checksum algorithms
 
 ## Optional REST configuration parameters
 
-### REST Method
-
-The REST request method can be configured via the *method* tag.
-Currently only the default setting PUT is fully tested and supported.
-Other HTTP methods can be set however they don't make much sense.
-
-    <configuration>
-      <method>PUT</method>
-    </configuration>
-
 ### Header Parameters
 
 The Artifactory request URL can be further modified by adding header
@@ -162,6 +154,19 @@ Following headers are usually created:
 
 1. Authentication header
 1. Checksum headers
+
+### REST Method
+
+Please note this option was taken from [rest-maven-plugin](https://github.com/cjnygard/rest-maven-plugin) you don't need
+to configure this parameters. 
+
+The REST request method can be configured via the *method* tag.
+Currently only the default setting PUT is fully tested and supported.
+Other HTTP methods can be set however they don't make much sense.
+
+    <configuration>
+      <method>PUT</method>
+    </configuration>
 
 ### REST Query Parameters
 
