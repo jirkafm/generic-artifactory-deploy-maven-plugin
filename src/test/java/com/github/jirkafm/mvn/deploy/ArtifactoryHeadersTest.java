@@ -15,7 +15,7 @@ import com.github.jirkafm.mvn.checksum.ChecksumAlgorithm;
 
 public class ArtifactoryHeadersTest {
 
-	private static final File TEST_FILE = new File("src/test/resources/LICENSE-2.0.txt");
+	private static final File TEST_FILE = new File("src/test/resources/LICENSE-2.0.zip");
 
 	@Test
 	public void testGetHeaders() {
@@ -36,7 +36,7 @@ public class ArtifactoryHeadersTest {
 		final Map<String, String> headers = artifactoryHeaders.getHeaders(TEST_FILE);
 		assertEquals("auth, checksum", 2, headers.size());
 		assertThat(headers, IsMapContaining.hasEntry("testKey", "testValue"));
-		assertThat(headers, IsMapContaining.hasEntry("X-Checksum-MD5", "3b83ef96387f14655fc854ddc3c6bd57"));
+		assertThat(headers, IsMapContaining.hasEntry("X-Checksum-MD5", "e950703edf9befa53c2af66784a71ad9"));
 	}
 
 	@Test
