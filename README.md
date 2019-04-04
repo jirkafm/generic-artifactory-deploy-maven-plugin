@@ -96,20 +96,24 @@ Artifactory wiki provides mechanism to authenticate please check this [link](htt
 
 Supported authentication mechanisms:
 * Basic authentication 
+* API Key
+* Access token
+
+Basic authentication:
 
     <configuration>
 		<username>admin</username>
 		<password>password</password>
     </configuration>
 
-* API Key
-
+API Key:	
+	
     <configuration>
 		<apiKey>your_api_key</apiKey>
     </configuration>
 
-* Access token
-
+Access token:	
+	
     <configuration>
 		<accessToken>your_access_token</accessToken>
     </configuration>
