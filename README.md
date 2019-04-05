@@ -8,6 +8,8 @@ package type of artifactory repository.
 This plugin is based on work of another plugin [rest-maven-plugin](https://github.com/cjnygard/rest-maven-plugin). 
 Credit to author of this plugin [Carl Nygard](https://github.com/cjnygard).
 
+For Java 8 and newer.
+
 ## Available goals
 
  * generic-artifactory-deploy:deploy
