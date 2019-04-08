@@ -27,7 +27,7 @@
 			<resource>
 				<directory>src/main/resources</directory>
 				<includes>
-					<include>**/*.txt</include>
+					<include>**/*.zip</include>
 				</includes>
 				<filtering>false</filtering>
 			</resource>
@@ -46,7 +46,7 @@
 					<password>password</password>
 					<url>http://localhost:8081/artifactory/generic-local</url>
 					<fileset>
-						<include>*.txt</include>
+						<include>*.zip</include>
 						<directory>src/test/resources</directory>
 					</fileset>
 				</configuration>
