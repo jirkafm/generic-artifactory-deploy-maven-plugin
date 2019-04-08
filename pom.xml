@@ -147,12 +147,6 @@ Purpose of this plugin is to be able to upload files into generic repository thr
 			<build>
 				<plugins>
 					<plugin>
-						<artifactId>maven-deploy-plugin</artifactId>
-						<configuration>
-							<skip>true</skip>
-						</configuration>
-					</plugin>
-					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-source-plugin</artifactId>
 						<version>3.0.1</version>
