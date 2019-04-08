@@ -40,6 +40,7 @@ declare the plugin and add a dependency on generic-artifactory-deploy-maven-plug
       </dependency>
     </dependencies>
 
+Check out example configuration [here](src/test/resources/unit/deploy-project/pom.xml)
 
 ### Adding source directories
 
