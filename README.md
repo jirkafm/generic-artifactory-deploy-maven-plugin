@@ -27,7 +27,7 @@ declare the plugin and add a dependency on generic-artifactory-deploy-maven-plug
         <plugin>
           <groupId>com.github.jirkafm</groupId>
           <artifactId>generic-artifactory-deploy-maven-plugin</artifactId>
-          <version>1.0.2</version>
+          <version>1.0.0</version>
         </plugin>
       </plugins>
     </build>
@@ -36,7 +36,7 @@ declare the plugin and add a dependency on generic-artifactory-deploy-maven-plug
       <dependency>
         <groupId>com.github.jirkafm</groupId>
         <artifactId>generic-artifactory-deploy-maven-plugin</artifactId>
-        <version>1.0.2</version>
+        <version>1.0.0</version>
       </dependency>
     </dependencies>
 
