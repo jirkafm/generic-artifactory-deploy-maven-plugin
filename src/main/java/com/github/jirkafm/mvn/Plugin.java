@@ -209,9 +209,11 @@ public class Plugin extends AbstractMojo {
 				artifactoryHeaders);
 
 		for (final File file : files) {
+			final RemoteFileLocation remoteFileLocation = new RemoteFileLocation(target.getUri(), file.getName());
 			final ArtifactoryFileDeployInput input = new ArtifactoryFileDeployInput(file, method, requestType);
 			final ArtifactoryFileDeploy deploy = new ArtifactoryFileDeploy(headerEnhancedBuilderFactory, input);
 			deploy.addListener(deployStatusAgregate);
+			deploy.addListener(new DeployStatusListener(remoteFileLocation));
 			deploy.deploy();
 		}
 
