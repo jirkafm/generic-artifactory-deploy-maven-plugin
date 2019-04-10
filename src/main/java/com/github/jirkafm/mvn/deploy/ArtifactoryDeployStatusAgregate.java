@@ -7,8 +7,6 @@ import java.util.Map;
 import javax.ws.rs.core.Response.Status.Family;
 import javax.ws.rs.core.Response.StatusType;
 
-import org.slf4j.LoggerFactory;
-
 import com.github.jirkafm.mvn.StatusTypeToString;
 
 public class ArtifactoryDeployStatusAgregate implements ArtifactoryDeployListener {
@@ -18,7 +16,6 @@ public class ArtifactoryDeployStatusAgregate implements ArtifactoryDeployListene
 	@Override
 	public void deployRequestComplete(final StatusType statusType, final File file) {
 		final StatusTypeToString statusTypeToString = new StatusTypeToString(statusType);
-		LoggerFactory.getLogger(getClass()).info("{} {}", statusTypeToString, file.getName());
 		if (Family.SUCCESSFUL != statusType.getFamily()) {
 			failedDeploys.put(file, statusTypeToString.toString());
 		}

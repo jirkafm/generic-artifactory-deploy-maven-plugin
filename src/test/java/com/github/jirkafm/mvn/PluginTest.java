@@ -34,7 +34,7 @@ public class PluginTest extends AbstractMojoTestCase {
 //			Integration test - select different fileset of files to be uploaded			
 //			FileSet fileset = new FileSet();
 //			fileset.setDirectory("src/test/resources");
-//			fileset.addInclude("*.txt");					
+//			fileset.addInclude("*.zip");					
 //			setPluginFieldValueReflectively(myPlugin, "fileset", fileset);
 
 //			Integration test - select different authentication method for artifactory			
