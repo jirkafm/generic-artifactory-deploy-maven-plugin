@@ -3,7 +3,7 @@
 
 	<groupId>com.github.jirkafm</groupId>
 	<artifactId>generic-artifactory-deploy-maven-plugin</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<packaging>maven-plugin</packaging>
 
 	<name>Generic Artifactory Deploy Maven Plugin</name>
@@ -30,7 +30,7 @@ Purpose of this plugin is to be able to upload files into generic repository thr
 		<developerConnection>scm:git:ssh://git@github.com/jirkafm/generic-artifactory-deploy-maven-plugin.git</developerConnection>
 		<connection>scm:git:https://github.com/jirkafm/generic-artifactory-deploy-maven-plugin.git</connection>
 		<url>https://github.com/jirkafm/generic-artifactory-deploy-maven-plugin.git</url>
-		<tag>generic-artifactory-deploy-maven-plugin-1.0.2</tag>
+		<tag>generic-artifactory-deploy-maven-plugin-1.0.0</tag>
 	</scm>
 
 	<properties>
