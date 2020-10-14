@@ -107,7 +107,7 @@ Purpose of this plugin is to be able to upload files into generic repository thr
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11</version>
+			<version>4.13.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
